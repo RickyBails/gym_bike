@@ -1,0 +1,17 @@
+{
+  "log_level": "INFO",
+  "MAX_RPM_IGNORE": 300,
+  "EVENTS_HEC_URL": "https://sti.lookingfortrouble.co.uk:8088/services/collector/event",
+  "EVENTS_HEC_HEADERS": {
+    "Authorization": "Splunk 52827ddd-5321-44af-b38d-7f706a55d11e",
+    "Content-Type": "application/json"
+  },
+  "O11Y_ENDPOINT": "https://ingest.eu2.signalfx.com/v2/datapoint",
+  "O11Y_TOKEN": "gy3QkXtKG06UOI4rx4eG7g",
+  "PM_ADDRESSES": [
+    "62012DC4-236A-0EA2-7A78-73DCFE652C58"
+  ],
+  "HRM_ADDRESSES": [
+    "A0ADA35D-8FA3-5317-14F6-D417B5A4121C"
+  ]
+}
