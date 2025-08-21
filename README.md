@@ -1,6 +1,9 @@
 # gym_bike
 Script for collecting HRM and power data from bluetooth devices and sending to Splunk
 
+# Pre-requisites
+Python needs to be 3.3 or higher for venv to work
+
 # 1) Clone the repository
 git clone https://github.com/<your-username>/<repo-name>.git
 cd <repo-name>
