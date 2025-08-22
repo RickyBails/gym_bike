@@ -35,7 +35,19 @@ python gym_collect.py
 
 (It should connect to all HRMs and power pedals listed in the config file and send per-second data to both O11y cloud and the core platform)
 
-# Part 2 Setting up the pedals for an event
+# Part 2: Setting up Splunk Platform
+
+Check Metrics index gym_events exists, if not create it with defaults (event-type index)
+
+Configure a HEC token for events data
+- Name: gym_bike
+- Default Index: gym_events (create new)
+- Sourcetype: gym_bike (new, custom)
+
+N.B. for a new instance, your HEC may be created disabled, and you need to enable in global settings (button on HEC config page)
+
+
+# Part 3: Setting up the pedals for an event
 
 ## Pre-requisites
 
