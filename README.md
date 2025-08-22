@@ -52,7 +52,7 @@ N.B. for a new instance, your HEC may be created disabled, and you need to enabl
 ## Pre-requisites
 
 - a stationary exercise bike where you can change the pedals, ideally one with saddle and handlebar adjustment to fit different people. Needs to provide some resistance so you can generate power but NOT using air resistance (e.g. concept 2)  - you want it to be quite when pedalling so you can have a conversation
-- The favero assioma power meter pedals
+- The favero assioma power meter pedals, in a box with a charging lead and 4 pedal washers in a bag
 - (nice-to-have) a large fan aimed at the top half of the ride on the bike
 - a mac laptop. The OS you're using needs direct access to the bluetooth controller. most windows VM envs don't allow this but on macs it's standard. The python script was developed and tested on macs
 - a ruler or tape measure (for measuring the crank length of the bike) unless the crank length is already printed on the cranks, or you otherwise know what it is.
@@ -66,6 +66,8 @@ N.B. for a new instance, your HEC may be created disabled, and you need to enabl
 - launch the 'favero assioma' app and connect with the pedals. Take the pedals out of 'travel mode' which they should be in if coming from storage
 - measure/obtain the crank length of the bike and input this (in mm) into the app. It's likely to be 165mm, 170mm or 175mm.
 - charge the pedals, using the clip-on usb lead in the box
+- remove any existing pedals on the exercise bike. Use 8mm allen key or a 15mm pedal wrench
+- fit the favero assioma power pedals. Start with the LHS one (the only one measuring power and place enough washers on the pedal spindle so that the bulbous part of the pedal spindle (the bit the charger attaches to) does not rub on the cranks when the pedals are rotated. Note that on bikes, the LH pedals and cranks have a reverse thread. Rather than 'righty-tighty lefty loosy' rule, use this: to loosen pedals, rotate the spindles as the bike wheels would rotate when reversing, and to tighten/fit pedals, rotate pedal spindle as wheels turn going forward.
 - in the splunk platform hosting the HEC and dashboard, launch the exercise_bike_2025_v1 dashboard in the 'Exercise Bike' and...
   - click on the cog icon above the 'Rider HRM Device' on the top edge, and check the list includes the name/id of all the bluetooth HRMs you are using. When configuring a new HRM, get the name/id by putting it on and running the python script: all BT devices visible to the mac are listed
   - click on the cog icon above the 'Rider' dropdown at the top of the dashboard and check it lists all the riders that will be using the bike. Enter name and max heart rate (if they don't know, use 220-age)
@@ -73,3 +75,4 @@ N.B. for a new instance, your HEC may be created disabled, and you need to enabl
 ## Event tear-down
 
 - launch the 'favero assioma' phone app and put the pedals in travel mode. This stops the battery running down between events
+- remove pedals and place any washers used back in the bag in the box - there are 4 washers in total
