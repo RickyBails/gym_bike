@@ -14,6 +14,7 @@ cd <repo-name>
 
 ## 2) Create a virtual environment
 python3 -m venv venv
+
 source venv/bin/activate
 
 ## 3) Install dependencies
@@ -22,18 +23,17 @@ pip install -r requirements.txt
 ## 4) Configure
 vi gym_collect.json
 
-review if any of the settings need changing - have the core/O!1y endpoints change or the HRMs and power pedals?
-replace the heart rate monitor ID with the IDs of all the heart rate monitors being used
-  (to find the IDs of the HRMs, put them on and run the script with 'python gym_collect.py'
-     - it starts by scanning all nearby BT devices and printing name and ID to stdout)
-replace the power pedals ID with the ID of the power pedals being used (have to be favero assioma)
-replace the O11Y* variables with the URL/token of the O11y cloud instance you want to send to, if needed
-replace the HEV variables with the HEC endpoint on the core instance you want to send events to.
+- review if any of the settings need changing - have the core/O!1y endpoints change or the HRMs and power pedals?
+- replace the heart rate monitor ID with the IDs of all the heart rate monitors being used
+   (to find the IDs of the HRMs, put them on and run the script with 'python gym_collect.py' and the script starts by scanning all nearby BT devices and printing name and ID to stdout) 
+- replace the power pedals ID with the ID of the power pedals being used (have to be favero assioma)
+- replace the O11Y* variables with the URL/token of the O11y cloud instance you want to send to, if needed
+- replace the HEV variables with the HEC endpoint on the core instance you want to send events to.
 
 ## 5) Run the script
 python gym_collect.py
 
-It should connect to all HRMs and power pedals and send per-second data to both O11y cloud and the core platform
+(It should connect to all HRMs and power pedals listed in the config file and send per-second data to both O11y cloud and the core platform)
 
 # Part 2 Setting up the pedals for an event
 
@@ -53,7 +53,11 @@ It should connect to all HRMs and power pedals and send per-second data to both 
 
 - launch the 'favero assioma' app and connect with the pedals. Take the pedals out of 'travel mode' which they should be in if coming from storage
 - measure/obtain the crank length of the bike and input this (in mm) into the app. It's likely to be 165mm, 170mm or 175mm.
+- charge the pedals, using the clip-on usb lead in the box
+- in the splunk platform hosting the HEC and dashboard, launch the exercise_bike_2025_v1 dashboard in the 'Exercise Bike' and...
+  - click on the cog icon above the 'Rider HRM Device' on the top edge, and check the list includes the name/id of all the bluetooth HRMs you are using. When configuring a new HRM, get the name/id by putting it on and running the python script: all BT devices visible to the mac are listed
+  - click on the cog icon above the 'Rider' dropdown at the top of the dashboard and check it lists all the riders that will be using the bike. Enter name and max heart rate (if they don't know, use 220-age)
 
 ## Event tear-down
 
-- launch the 'favero assioma' phone app and put the pedals in tr
+- launch the 'favero assioma' phone app and put the pedals in travel mode. This stops the battery running down between events
