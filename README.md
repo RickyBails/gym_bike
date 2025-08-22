@@ -38,3 +38,22 @@ It should connect to all HRMs and power pedals and send per-second data to both 
 # Part 2 Setting up the pedals for an event
 
 ## Pre-requisites
+
+- a stationary exercise bike where you can change the pedals, ideally one with saddle and handlebar adjustment to fit different people. Needs to provide some resistance so you can generate power but NOT using air resistance (e.g. concept 2)  - you want it to be quite when pedalling so you can have a conversation
+- The favero assioma power meter pedals
+- (nice-to-have) a large fan aimed at the top half of the ride on the bike
+- a mac laptop. The OS you're using needs direct access to the bluetooth controller. most windows VM envs don't allow this but on macs it's standard. The python script was developed and tested on macs
+- a ruler or tape measure (for measuring the crank length of the bike) unless the crank length is already printed on the cranks, or you otherwise know what it is.
+- an 8mm allen key (for fitting pedals) and MAYBE a 15mm pedal spanner for removing old pedals if they do not have 8mm socket.
+- install the 'favero assioma' app on your phone.
+- a table next to the exercise bike to put the mac on, ideally so you can reach it from the bike
+- the ability to pedal on the bike for long periods of time while having a conversation. Ideally you are relatively fit and familiar with pedalling a bike.
+
+## Event set-up
+
+- launch the 'favero assioma' app and connect with the pedals. Take the pedals out of 'travel mode' which they should be in if coming from storage
+- measure/obtain the crank length of the bike and input this (in mm) into the app. It's likely to be 165mm, 170mm or 175mm.
+
+## Event tear-down
+
+- launch the 'favero assioma' phone app and put the pedals in tr
