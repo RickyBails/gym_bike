@@ -27,7 +27,7 @@ vi gym_collect.json
 - replace the heart rate monitor ID with the IDs of all the heart rate monitors being used
    (to find the IDs of the HRMs, put them on and run the script with 'python gym_collect.py' and the script starts by scanning all nearby BT devices and printing name and ID to stdout) 
 - replace the power pedals ID with the ID of the power pedals being used (have to be favero assioma)
-- replace the O11Y* variables with the URL/token of the O11y cloud instance you want to send to, if needed
+- replace the O11Y* variables with the URL/token of the O11y cloud instance you want to send to, e.g. replace 'insert-hec-token-here' and 'insert-o11y-cloud-token-here' and the respective endpoints
 - replace the HEV variables with the HEC endpoint on the core instance you want to send events to.
 
 ## 5) Run the script
