@@ -3,11 +3,11 @@
   "MAX_RPM_IGNORE": 300,
   "EVENTS_HEC_URL": "https://sti.lookingfortrouble.co.uk:8088/services/collector/event",
   "EVENTS_HEC_HEADERS": {
-    "Authorization": "Splunk 52827ddd-5321-44af-b38d-7f706a55d11e",
+    "Authorization": "Splunk insert-hec-token-here",
     "Content-Type": "application/json"
   },
   "O11Y_ENDPOINT": "https://ingest.eu2.signalfx.com/v2/datapoint",
-  "O11Y_TOKEN": "gy3QkXtKG06UOI4rx4eG7g",
+  "O11Y_TOKEN": "insert_o11y_cloud_token_here",
   "PM_ADDRESSES": [
     "62012DC4-236A-0EA2-7A78-73DCFE652C58"
   ],
